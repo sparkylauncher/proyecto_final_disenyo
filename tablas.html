@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap by Diego - Tablas</title>
+	<script src="lib/jquery.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="lib/jqueryui/jquery-ui.js"></script>
+	<script src="js/funciones.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/jqueryui/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/colores.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="icon" type="image/jpg" href="img/favicon.jpg">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row cabecera">
+			<div class="col-3"></div>
+			<div class="col-md-6 text-center mt-4 mb-4">
+				<img src="img/titulo_bootstrap.png" alt="logo bootstrap" id="logo" class="align-middle">
+				<span id="titulo">BOOTSTRAP</span>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar-expand-md navbar-light bg-light w-100">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#">Menú</a>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item ">
+							<a class="nav-link" href="index.html">Índice</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="layout.html">Layout</a>
+						</li>
+						<li class="nav-item  active">
+							<a class="nav-link" href="tablas.html">Tablas  <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="formularios.html">Formularios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div class="row">
+			<div class="col lado pt-5 pb-5"></div>
+			<div class="col-md-6 pt-5 pb-5">
+				<h1>Tablas</h1>
+				<p class="contenido">
+					Bootstrap permite dar formato y colores a las tablas para hacerlas mas vistosas. Se pueden
+					modificar tanto los bordes, los colores de fondo, patrones de colores de fondo,etc.
+				</p>
+				<table class="table table-striped">
+					<thead>
+						<tr class="table-primary">
+							<th scope="col">#</th>
+							<th scope="col">col1</th>
+							<th scope="col">col2</th>
+							<th scope="col">col3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>1-1</td>
+							<td>1-2</td>
+							<td>1-3</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>2-1</td>
+							<td>2-2</td>
+							<td>2-3</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>3-1</td>
+							<td>3-2</td>
+							<td>3-3</td>
+						</tr>
+					</tbody>
+				</table>
+				<span class="descripcion">tabla con fondo de zebra</span>
+				<br><br>
+				<p class="contenido">
+					También podemos hacer tablas responsive, que añaden un scroll horizontal si la tabla es demasiado
+					grande a partir del breakpoint. De manera similar a contenedores y columnas, se usa la notacion
+					table-responsive-x, donde x va de sm a xl.
+				</p>
+				<div class="table-responsive-lg">
+					<table class="table table-dark">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">col1</th>
+								<th scope="col">col2</th>
+								<th scope="col">col3</th>
+								<th scope="col">col4</th>
+								<th scope="col">col5</th>
+								<th scope="col">col6</th>
+								<th scope="col">col7</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>1-1</td>
+								<td>1-2</td>
+								<td>1-3</td>
+								<td>1-4</td>
+								<td>1-5</td>
+								<td>1-6</td>
+								<td>1-7</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>2-1</td>
+								<td>2-2</td>
+								<td>2-3</td>
+								<td>2-4</td>
+								<td>2-5</td>
+								<td>2-6</td>
+								<td>2-7</td>
+
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>3-1</td>
+								<td>3-2</td>
+								<td>3-3</td>
+								<td>3-4</td>
+								<td>3-5</td>
+								<td>3-6</td>
+								<td>3-7</td>
+
+							</tr>
+						</tbody>
+					</table>
+					<span class="descripcion">tabla responsive lg(a 992px)</span>
+				</div>
+
+			</p>
+
+		</div>
+		<div class="col text-center cambiafuente lado pt-5 pb-5">
+			<h4>Tamaño de fuente</h4><br/>
+			<button id="aumentar">A+</button><br/><br/>
+			<button id="reducir">A-</button><br/><br/>
+			<button id="resetFuente">Original</button>
+		</div>
+	</div>
+	<div class="row nomargenes">
+		<div class="col nopad">
+			<footer class="page-footer pie">
+
+				<div class="container social">
+					<ul class="list-unstyled list-inline text-center">
+						<li class="list-inline-item">
+							<a class="btn-floating mx-1" href="https://es-es.facebook.com/">
+								<i class="fa fa-facebook"> </i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="btn-floating mx-1" href="https://twitter.com">
+								<i class="fa fa-twitter"> </i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="btn-floating mx-1" href="https://www.instagram.com/">
+								<i class="fa fa-instagram"> </i>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="footer-copyright text-center">
+					<img src="img/titulo_bootstrap.png" alt="logo" id="logofooter">
+					<img src="img/creative_commons.jpg" alt="creative_commomns" id="creative_commons">
+				© 2020 Copyright: Diego Camargo</div>
+			</footer>
+		</div>
+
+	</div>
+</body>
+</html>

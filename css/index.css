@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Aller_Lt";
+  src: url("../fonts/Aller_Lt.ttf");
+}
+
+p{
+	font-family: "Aller_Lt";
+	font-size: 1.2rem;
+	text-align: justify;
+}
+
+video{
+	width: 50%;
+	margin: 0 25%;
+}
+
+
+.descripcion{
+	font-style: italic;
+    margin:auto; 
+    display:table;
+}
+
+.lado{
+	padding: 0;
+	min-height: 40vw;
+}
+
+#logo{
+	height: 4vw;
+	width: 5vw;
+	margin-right: 1.5vw;
+	margin-bottom: 1.5vw;
+}
+
+#titulo{
+	font-size: 4vw;
+}
+
+picture{
+	float: left;
+}
+
+.header {
+    font-size: 2rem;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #93BBE1;
+    float: left;
+}
+
+
+@media (max-width: 768px){
+	p{
+		font-size:1.5rem;
+	}
+
+	.cambiafuente{
+		display: none;
+	}
+
+	#titulo{
+		font-size: 3rem;
+	}
+
+	#logo{
+	height: 3rem;
+	width: 3.5rem;
+	margin-right: 1rem;
+}
+}

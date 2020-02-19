@@ -1,0 +1,19 @@
+.pie{
+	padding: 2vw 0;
+	margin-left:0;
+	margin-right: 0;
+}
+
+.nopad{
+	padding: 0;
+}
+
+#logofooter{
+	height: 2rem;
+	width: 2rem;
+}
+
+#creative_commons{
+	height: 2rem;
+	width: 5rem;
+}
